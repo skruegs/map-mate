@@ -1,0 +1,53 @@
+{
+    "manifest_version": 2,
+
+    "name": "MapMate",
+    "description": "Click-free lookup of addresses and directions",
+    "author": "Sarah Krueger",
+
+    "version": "0.0.1",
+
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "tabs",
+        "geolocation"
+    ],
+
+    "commands": {
+        "search-google-maps": {
+            "suggested_key": {
+                "default": "Ctrl+M",
+                "mac": "MacCtrl+M"
+            },
+            "description": "Search Google Maps"
+        },
+        "get-directions-to": {
+            "suggested_key": {
+                "default": "Ctrl+T",
+                "mac": "MacCtrl+T"
+            },
+            "description": "Get Directions To Selection"
+        },
+        "get-directions-from": {
+            "suggested_key": {
+                "default": "Ctrl+F",
+                "mac": "MacCtrl+F"
+            },
+            "description": "Get Directions From Selection"
+        }
+    },
+
+    "background": {
+        "scripts": [ "background.js" ],
+        "persistent": false
+    },
+
+    "options_page": "options/options.html",
+
+    "icons": {
+      "16": "assets/location-icon-16.png",
+      "48": "assets/location-icon-48.png"
+    }
+
+}

@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>MapMate Options</title>
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript" src="options.js"></script>
+  <link rel="stylesheet" type="text/css" href="options.css">
+  <link rel="shortcut icon" href="../assets/location-icon-48.png">
+</head>
+<body>
+  <div id="header">
+    <table>
+      <tr>
+        <td><img src="../assets/mapmate-logo.png"></td>
+        <td><div id="controls">
+          <h2>Shortcuts</h2>
+          <p>
+          <b>Ctrl + M</b> <br>Open Selection in Google Maps<br>
+          <b>Ctrl + T</b> <br>Get Directions from Saved Address to Selection<br>
+          <b>Ctrl + F</b> <br>Get Directions from Selection to Saved Address
+          </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="line"></div>
+  <div id="wrapper">
+    <h3>Saved Address</h3>
+    <input type="text" id="address1"><br>
+    <h3>Travel Mode</h3>
+    <form id="travel-form">
+      <input type="radio" name="travel" id="travel" value="d"> Driving<br>
+      <input type="radio" name="travel" id="travel" value="w"> Walking<br>
+      <input type="radio" name="travel" id="travel" value="b"> Bicycling<br>
+      <input type="radio" name="travel" id="travel" value="r"> Transit
+    </form>
+    <button id="save">Save</button></body>
+  </div>
+</html>
